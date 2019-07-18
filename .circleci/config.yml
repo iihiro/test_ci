@@ -5,5 +5,5 @@ jobs:
     steps:
       - checkout
       - run:
-        name: docker-compose up
-        command: docker-compose up --build
+        name: run01
+        command: pytest test.py
