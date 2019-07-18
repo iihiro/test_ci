@@ -3,5 +3,5 @@ python: 3.6
 service: docker
 
 script:
-     - docker-compose up --build
- 
+#     - docker-compose up --build
+     - cat /proc/cpuinfo && cat /proc/meminfo

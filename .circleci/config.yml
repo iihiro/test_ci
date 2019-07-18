@@ -6,4 +6,5 @@ jobs:
       - checkout
       - run:
           name: Running tests
-          command: docker-compose up --build
+#          command: docker-compose up --build
+          command: cat /proc/cpuinfo && cat /proc/meminfo
