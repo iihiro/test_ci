@@ -4,6 +4,4 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run:
-        name: run01
-        command: pytest test.py
+      - run: pytest test.py
