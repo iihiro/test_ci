@@ -5,7 +5,7 @@ import os, sys
 
 class A(object):
     def add(self, a, b):
-        return a + b + 1
+        return a + b
     def div(self, a, b):
         return a // b
     def square(self, a):
