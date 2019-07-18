@@ -1,7 +1,13 @@
 version: '3'
 services:
-  python3:
+  hoge:
     restart: always
-    build: .
-    container_name: 'python3'
-    working_dir: '/opt/test'
+    build:
+      context: .
+      dockerfile: Dockerfile-hoge
+    container_name: 'hoge'
+#    working_dir: '/opt/test'
+#    tty: true
+#    volumes:
+#      - ./data:/root/data
+#    command: pytest test.py
