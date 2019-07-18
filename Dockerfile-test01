@@ -4,4 +4,4 @@ COPY . /opt/test
 RUN apt-get update
 RUN pip install pytest
 WORKDIR /opt/test
-CMD bash -c "pytest test.py && echo \"done\""
+CMD bash -c "pytest test.py && echo \"test01 finished\""

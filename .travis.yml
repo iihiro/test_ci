@@ -1,9 +1,7 @@
 language: python
-service: docker
 python: 3.6
 service: docker
 
 script:
-#    - pytest test.py
      - docker-compose up --build
  

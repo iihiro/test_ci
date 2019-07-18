@@ -1,10 +1,15 @@
 version: '3'
 services:
-  hoge:
+  test01:
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile-hoge
+      dockerfile: Dockerfile-test01
+  test02:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile-test02
 #    container_name: 'hoge'
 #    working_dir: '/opt/test'
 #    tty: true
