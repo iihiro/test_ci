@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-hoge
-    container_name: 'hoge'
+#    container_name: 'hoge'
 #    working_dir: '/opt/test'
 #    tty: true
 #    volumes:
