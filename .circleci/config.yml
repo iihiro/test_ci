@@ -4,4 +4,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: docker-compose up --build
+#      - run: docker-compose up --build
+      - run:
+          name: Running tests
+          command: docker-compose up --build
