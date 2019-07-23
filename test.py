@@ -12,7 +12,10 @@ def calc():
 
 def test_add(calc):
     assert calc.add(2, 1) == 3
-    
+
+def test_add2(calc):
+    assert calc.add(2, 1) == 4
+
 def test_div(calc):
     assert calc.div(2, 1) == 2
 
