@@ -8,7 +8,7 @@ jobs:
           name: Running tests
           command: docker-compose up --build
 #          command: cat /proc/cpuinfo && cat /proc/meminfo
-  hoge:
+  test:
     steps:
       - checkout
       - run:
@@ -20,6 +20,6 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - hoge:
+      - test:
         requires:
           - build
