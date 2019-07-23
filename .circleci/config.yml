@@ -8,8 +8,18 @@ jobs:
           name: Running tests
           command: docker-compose up --build
 #          command: cat /proc/cpuinfo && cat /proc/meminfo
+  hoge:
+    steps:
+      - checkout
+      - run:
+        name: Hoge
+        command: pytest test.py
+
 workflows:
   version: 2
   build_and_test:
     jobs:
       - build
+      - hoge:
+        requires:
+          - build
