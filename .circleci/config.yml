@@ -9,6 +9,7 @@ jobs:
           command: docker-compose up --build
 #          command: cat /proc/cpuinfo && cat /proc/meminfo
   test:
+    machine: true
     steps:
       - checkout
       - run:
