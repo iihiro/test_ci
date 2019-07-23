@@ -10,6 +10,8 @@ def calc():
     print("create A")
     return c
 
+bug
+
 def test_add(calc):
     assert calc.add(2, 1) == 3
 
