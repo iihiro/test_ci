@@ -8,3 +8,8 @@ jobs:
           name: Running tests
           command: docker-compose up --build
 #          command: cat /proc/cpuinfo && cat /proc/meminfo
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
