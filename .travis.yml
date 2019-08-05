@@ -1,6 +1,7 @@
 language: python
-python:
-    - 3.6
+python: 3.6
+service: docker
+
 script:
-    - pytest test.py
- 
+     - docker-compose up --build
+#     - cat /proc/cpuinfo && cat /proc/meminfo
