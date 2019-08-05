@@ -1,9 +1,9 @@
 version: 2
 jobs:
-  build:
-    branches:
-      only:
-        - hoge
+#  build:
+#    branches:
+#      only:
+#        - hoge
     machine: true
     steps:
       - checkout
@@ -12,9 +12,9 @@ jobs:
           command: docker-compose up --build
 #          command: cat /proc/cpuinfo && cat /proc/meminfo
   test:
-    branches:
-      only:
-        - hoge
+#    branches:
+#      only:
+#        - hoge
     machine: true
     steps:
       - checkout
@@ -30,3 +30,6 @@ workflows:
       - test:
           requires:
             - build
+      filters:
+        branches:
+	  only: develop
