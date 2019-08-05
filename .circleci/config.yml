@@ -25,11 +25,14 @@ jobs:
 workflows:
   version: 2
   build_and_test:
-    filters:
-      branches:
-        only: develop
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: develop
       - test:
           requires:
             - build
+          filters:
+            branches:
+              only: develop
